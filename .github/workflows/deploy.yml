@@ -3,7 +3,7 @@ name: Deploy My PortfolioApp to GitHub Pages
 on:
   push:
     branches:
-      - main   # or master
+      - m   # or master
 
 permissions:
   contents: read
