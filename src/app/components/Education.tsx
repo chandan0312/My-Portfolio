@@ -4,21 +4,21 @@ import { GraduationCap, Award, Globe } from 'lucide-react';
 export function Education() {
   const education = [
     {
+      degree: 'Post Graduate Diploma in Computer Applications (PGDCA)',
+      institution: 'IISDT',
+      year: '2024/25',
+      type: 'education',
+    },
+    {
       degree: 'Bachelor of Technology',
       institution: 'Vinoba Bhave University, Jharkhand',
-      year: '14/10/2020',
+      year: '2020',
       type: 'education',
     },
     {
       degree: 'Intermediate in Science',
       institution: 'Delhi Public School, Ranchi',
       year: '2014/15',
-      type: 'education',
-    },
-    {
-      degree: 'Higher Secondary Education',
-      institution: 'Saraswati Vidya Mandir, Ranchi',
-      year: '5/2013',
       type: 'education',
     },
   ];

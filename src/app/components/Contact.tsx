@@ -103,7 +103,7 @@ export function Contact() {
             <div className="relative z-10">
               <h3 className="text-3xl md:text-4xl font-bold mb-4">Let's Work Together</h3>
               <p className="mb-8 text-orange-100 max-w-2xl mx-auto">
-                I'm always interested in hearing about new projects and opportunities. 
+                I'm always interested in hearing about freelancing , new projects and opportunities. 
                 Whether you have a question or just want to say hi, feel free to reach out!
               </p>
               

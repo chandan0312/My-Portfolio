@@ -5,7 +5,7 @@ export function About() {
   const highlights = [
     {
       icon: Server,
-      value: '4.10+',
+      value: '4.9+',
       label: 'Years Experience',
       color: 'from-orange-500 to-red-500',
     },
@@ -66,7 +66,7 @@ export function About() {
             </h3>
             <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
               <p>
-                I am a <span className="text-orange-500 font-semibold">strong, skilled DevOps engineer</span> with 4.10 years of experience 
+                I am a <span className="text-orange-500 font-semibold">strong, skilled DevOps engineer</span> with 4.9+ years of experience 
                 developing, deploying, and managing applications using automated CI/CD pipelines across multiple environments. My expertise lies in 
                 containerization, orchestration, and cloud infrastructure management, enabling scalable, reliable, and efficient application delivery.
               </p>

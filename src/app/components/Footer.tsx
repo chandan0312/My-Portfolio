@@ -15,7 +15,7 @@ export function Footer() {
                 <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent"> Kumar</span>
               </h3>
               <p className="text-gray-400 mb-4">
-                DevOps Engineer specializing in cloud infrastructure, containerization, and CI/CD automation.
+                DevOps Engineer specializing in CI/CD automation, Containerization, and Cloud.
               </p>
               <div className="flex gap-4">
                 <a

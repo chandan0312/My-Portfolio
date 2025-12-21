@@ -1,2 +1,11 @@
-# My-Portfolio
-Strong, skilled DevOps engineer with 4.10+ years of experience developing applications via automated pipelines. Deep expertise in Docker, Kubernetes, Azure, and AWS cloud platforms.
+
+  # Portfolio Website
+
+  This is a code bundle for Portfolio Website. The original project is available at https://www.figma.com/design/Ew24MnUAZH7VXWaiGDS0GN/Portfolio-Website.
+
+  ## Running the code
+
+  Run `npm i` to install the dependencies.
+
+  Run `npm run dev` to start the development server.
+  

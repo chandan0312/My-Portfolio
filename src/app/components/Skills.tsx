@@ -6,7 +6,7 @@ export function Skills() {
     {
       icon: Cloud,
       category: 'DevOps & CI/CD',
-      skills: ['DevOps CI/CD', 'Jenkins', 'Git/GitHub/GitLab', 'Azure Release Pipeline', 'GitHub Actions'],
+      skills: ['DevOps CI/CD', 'GitHub Actions', 'Git/GitHub/', 'Azure Release Pipeline', 'Terraform' ,'SonarQube'],
       color: 'from-orange-500 to-red-500',
     },
     {
