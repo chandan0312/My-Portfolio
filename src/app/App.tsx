@@ -11,7 +11,7 @@ import { Footer } from './components/Footer';
 export default function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-black dark:bg-black transition-colors duration-300">
+      <div className="min-h-screen bg-gray-50 dark:bg-black transition-colors duration-300">
         <Header />
         <main>
           <Hero />

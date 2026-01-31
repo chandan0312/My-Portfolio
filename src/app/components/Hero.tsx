@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Github, Linkedin, Mail, Download, Code } from 'lucide-react';
-import profileImage from '../../assets/c49d89cc3ba9dbd5284d66f0815ddfdd2cc8d3f6.png';
+import profileImage from 'figma:asset/c49d89cc3ba9dbd5284d66f0815ddfdd2cc8d3f6.png';
 import { generateCV } from '../utils/generateCV';
 
 export function Hero() {
@@ -66,7 +66,7 @@ export function Hero() {
                 transition={{ delay: 0.5 }}
                 className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-xl leading-relaxed"
               >
-                Strong, skilled DevOps engineer with <span className="text-sky-600 dark:text-orange-500 font-semibold">4.9+ years</span> of experience 
+                Strong, skilled DevOps engineer with <span className="text-sky-600 dark:text-orange-500 font-semibold">5+ years</span> of experience 
                 developing applications via automated pipelines. Deep expertise in Docker, Kubernetes, Azure, and AWS cloud platforms.
               </motion.p>
 

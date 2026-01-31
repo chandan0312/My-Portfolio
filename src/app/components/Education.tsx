@@ -24,17 +24,17 @@ export function Education() {
   ];
 
   const certifications = [
-    { name: 'AWS Cloud Practitioner Certification Basic', color: 'from-orange-500 to-red-500' },
-    { name: 'Basic Python Programming', color: 'from-red-500 to-orange-600' },
-    { name: 'GitHub Foundation Certification', color: 'from-orange-600 to-red-600' },
-    { name: 'GitHub Action Certification', color: 'from-red-600 to-orange-500' },
+    { name: 'AWS Cloud Practitioner Certification Basic', color: 'from-orange-500 to-red-500', lightColor: 'from-sky-500 to-blue-600' },
+    { name: 'Basic Python Programming', color: 'from-red-500 to-orange-600', lightColor: 'from-blue-500 to-sky-500' },
+    { name: 'GitHub Foundation Certification', color: 'from-orange-600 to-red-600', lightColor: 'from-sky-600 to-blue-500' },
+    { name: 'GitHub Action Certification', color: 'from-red-600 to-orange-500', lightColor: 'from-blue-600 to-sky-600' },
   ];
 
   return (
-    <section id="education" className="py-20 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
+    <section id="education" className="py-20 bg-gradient-to-b from-white via-gray-50 to-white dark:from-black dark:via-gray-900 dark:to-black relative overflow-hidden">
       {/* Background effects */}
-      <div className="absolute top-0 left-1/3 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-1/3 w-96 h-96 bg-red-500/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-1/3 w-96 h-96 bg-sky-500/5 dark:bg-orange-500/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/3 w-96 h-96 bg-blue-500/5 dark:bg-red-500/5 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -44,10 +44,10 @@ export function Education() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            Education & <span className="text-orange-500">Certifications</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
+            Education & <span className="text-sky-600 dark:text-orange-500">Certifications</span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-red-600 mx-auto" />
+          <div className="w-20 h-1 bg-gradient-to-r from-sky-500 to-blue-600 dark:from-orange-500 dark:to-red-600 mx-auto" />
         </motion.div>
 
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
@@ -57,9 +57,9 @@ export function Education() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="text-2xl font-bold mb-8 text-white flex items-center gap-3"
+              className="text-2xl font-bold mb-8 text-gray-900 dark:text-white flex items-center gap-3"
             >
-              <div className="p-2 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg">
+              <div className="p-2 bg-gradient-to-br from-sky-500 to-blue-600 dark:from-orange-500 dark:to-red-600 rounded-lg">
                 <GraduationCap className="text-white" size={24} />
               </div>
               Education
@@ -73,17 +73,17 @@ export function Education() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="group relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700 hover:border-orange-500/50 transition-all hover:-translate-y-1"
+                  className="group relative bg-white dark:bg-gradient-to-br dark:from-slate-900/90 dark:to-slate-800/90 backdrop-blur-sm rounded-xl p-6 border border-gray-200 dark:border-slate-700 hover:border-sky-500 dark:hover:border-orange-500/50 transition-all hover:-translate-y-1 shadow-lg"
                 >
-                  <div className="absolute top-4 right-4 w-12 h-12 bg-orange-500/10 rounded-full flex items-center justify-center">
-                    <GraduationCap className="text-orange-500" size={20} />
+                  <div className="absolute top-4 right-4 w-12 h-12 bg-sky-500/10 dark:bg-orange-500/10 rounded-full flex items-center justify-center">
+                    <GraduationCap className="text-sky-600 dark:text-orange-500" size={20} />
                   </div>
                   
-                  <h4 className="font-bold text-lg mb-2 text-white pr-12 group-hover:text-orange-500 transition-colors">
+                  <h4 className="font-bold text-lg mb-2 text-gray-900 dark:text-white pr-12 group-hover:text-sky-600 dark:group-hover:text-orange-500 transition-colors">
                     {edu.degree}
                   </h4>
-                  <p className="text-orange-500 mb-1 font-medium">{edu.institution}</p>
-                  <p className="text-sm text-gray-400">{edu.year}</p>
+                  <p className="text-sky-600 dark:text-orange-500 mb-1 font-medium">{edu.institution}</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">{edu.year}</p>
                 </motion.div>
               ))}
             </div>
@@ -95,9 +95,9 @@ export function Education() {
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="text-2xl font-bold mb-8 text-white flex items-center gap-3"
+              className="text-2xl font-bold mb-8 text-gray-900 dark:text-white flex items-center gap-3"
             >
-              <div className="p-2 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg">
+              <div className="p-2 bg-gradient-to-br from-sky-500 to-blue-600 dark:from-orange-500 dark:to-red-600 rounded-lg">
                 <Award className="text-white" size={24} />
               </div>
               Certifications
@@ -111,14 +111,14 @@ export function Education() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="group relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-xl p-5 border border-gray-700 hover:border-orange-500/50 transition-all hover:-translate-y-1 overflow-hidden"
+                  className="group relative bg-white dark:bg-gradient-to-br dark:from-slate-900/90 dark:to-slate-800/90 backdrop-blur-sm rounded-xl p-5 border border-gray-200 dark:border-slate-700 hover:border-sky-500 dark:hover:border-orange-500/50 transition-all hover:-translate-y-1 overflow-hidden shadow-lg"
                 >
                   {/* Gradient line on left */}
-                  <div className={`absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b ${cert.color}`} />
+                  <div className={`absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b ${cert.lightColor} dark:${cert.color}`} />
                   
                   <div className="flex items-start gap-3 pl-4">
-                    <div className={`w-2 h-2 bg-gradient-to-r ${cert.color} rounded-full mt-2 flex-shrink-0`} />
-                    <p className="font-semibold text-white group-hover:text-orange-500 transition-colors">
+                    <div className={`w-2 h-2 bg-gradient-to-r ${cert.lightColor} dark:${cert.color} rounded-full mt-2 flex-shrink-0`} />
+                    <p className="font-semibold text-gray-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-orange-500 transition-colors">
                       {cert.name}
                     </p>
                   </div>
@@ -132,7 +132,7 @@ export function Education() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="relative bg-gradient-to-br from-orange-500 to-red-600 rounded-xl p-6 text-white shadow-xl overflow-hidden"
+              className="relative bg-gradient-to-br from-sky-500 to-blue-600 dark:from-orange-500 dark:to-red-600 rounded-xl p-6 text-white shadow-xl overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16" />
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12" />
@@ -145,11 +145,11 @@ export function Education() {
                 <div className="space-y-4">
                   <div className="bg-white/10 rounded-lg p-3 backdrop-blur-sm">
                     <p className="font-semibold">English</p>
-                    <p className="text-sm text-orange-100">Speaking / Reading / Writing</p>
+                    <p className="text-sm text-white/80">Speaking / Reading / Writing</p>
                   </div>
                   <div className="bg-white/10 rounded-lg p-3 backdrop-blur-sm">
                     <p className="font-semibold">Hindi</p>
-                    <p className="text-sm text-orange-100">Native Language</p>
+                    <p className="text-sm text-white/80">Native Language</p>
                   </div>
                 </div>
               </div>

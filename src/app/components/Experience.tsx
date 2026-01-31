@@ -22,7 +22,7 @@ export function Experience() {
       location: 'India',
       description: 'Application Migration/DevOps and web development/building those migrations to support applications',
       responsibilities: [
-        'Used DevOps tools like Jenkins, GitLab, Azure, AWS, and GitHub',
+        'Used DevOps tools like Jenkins, GitHub Actions, Azure, AWS, and GitHub',
         'Performed code analysis and generality of AWS services for build release and test',
         'Used Terraform for infrastructure automation and Ansible to write Playbooks, Jenkins, Docker, and Kubernetes',
         'Used Azure Deployment and used containerization of applications and features',
@@ -43,9 +43,9 @@ export function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
+    <section id="experience" className="py-20 bg-gradient-to-b from-white via-gray-50 to-white dark:from-black dark:via-gray-900 dark:to-black relative overflow-hidden">
       {/* Background effects */}
-      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-sky-500/5 dark:bg-orange-500/5 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -55,11 +55,11 @@ export function Experience() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            Work <span className="text-orange-500">Experience</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
+            Work <span className="text-sky-600 dark:text-orange-500">Experience</span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-red-600 mx-auto mb-4" />
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-gradient-to-r from-sky-500 to-blue-600 dark:from-orange-500 dark:to-red-600 mx-auto mb-4" />
+          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             My professional journey in DevOps and cloud engineering
           </p>
         </motion.div>
@@ -67,7 +67,7 @@ export function Experience() {
         <div className="max-w-4xl mx-auto">
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-500 via-red-500 to-orange-600" />
+            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-sky-500 via-blue-500 to-sky-600 dark:from-orange-500 dark:via-red-500 dark:to-orange-600" />
 
             {experiences.map((exp, index) => (
               <motion.div
@@ -92,23 +92,23 @@ export function Experience() {
                       repeat: Infinity,
                       delay: index * 0.3,
                     }}
-                    className="absolute left-8 md:left-1/2 top-6 w-4 h-4 -ml-2 rounded-full bg-gradient-to-r from-orange-500 to-red-600 border-4 border-gray-900 shadow-lg shadow-orange-500/50 z-10"
+                    className="absolute left-8 md:left-1/2 top-6 w-4 h-4 -ml-2 rounded-full bg-gradient-to-r from-sky-500 to-blue-600 dark:from-orange-500 dark:to-red-600 border-4 border-white dark:border-gray-900 shadow-lg shadow-sky-500/50 dark:shadow-orange-500/50 z-10"
                   />
 
                   {/* Timeline icon */}
-                  <div className="absolute left-4 md:left-1/2 top-2 w-12 h-12 -ml-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full shadow-lg flex items-center justify-center border-2 border-orange-500 z-10">
-                    <Briefcase className="w-6 h-6 text-orange-500" />
+                  <div className="absolute left-4 md:left-1/2 top-2 w-12 h-12 -ml-6 bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-full shadow-lg flex items-center justify-center border-2 border-sky-500 dark:border-orange-500 z-10">
+                    <Briefcase className="w-6 h-6 text-sky-600 dark:text-orange-500" />
                   </div>
 
-                  <div className={`group bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700 hover:border-orange-500/50 transition-all hover:-translate-y-1 ${
+                  <div className={`group bg-white dark:bg-gradient-to-br dark:from-slate-900/90 dark:to-slate-800/90 backdrop-blur-sm rounded-xl p-6 border border-gray-200 dark:border-slate-700 hover:border-sky-500 dark:hover:border-orange-500/50 transition-all hover:-translate-y-1 shadow-lg ${
                     index % 2 === 0 ? 'md:mr-12' : 'md:ml-12'
                   }`}>
                     <div className="mb-4">
-                      <h3 className="text-xl font-bold mb-2 text-white group-hover:text-orange-500 transition-colors">
+                      <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-orange-500 transition-colors">
                         {exp.title}
                       </h3>
-                      <p className="text-orange-500 font-semibold mb-2">{exp.company}</p>
-                      <div className="flex flex-wrap gap-3 text-sm text-gray-400">
+                      <p className="text-sky-600 dark:text-orange-500 font-semibold mb-2">{exp.company}</p>
+                      <div className="flex flex-wrap gap-3 text-sm text-gray-600 dark:text-gray-400">
                         <span className="flex items-center gap-1">
                           <Calendar size={14} />
                           {exp.period}
@@ -118,12 +118,12 @@ export function Experience() {
                       </div>
                     </div>
 
-                    <p className="text-gray-300 mb-4 leading-relaxed">{exp.description}</p>
+                    <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">{exp.description}</p>
 
                     <ul className="space-y-2">
                       {exp.responsibilities.map((responsibility, i) => (
-                        <li key={i} className="flex items-start gap-2 text-sm text-gray-400">
-                          <span className="text-orange-500 mt-1 flex-shrink-0">▸</span>
+                        <li key={i} className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400">
+                          <span className="text-sky-600 dark:text-orange-500 mt-1 flex-shrink-0">▸</span>
                           <span>{responsibility}</span>
                         </li>
                       ))}

@@ -31,7 +31,7 @@ export const generateCV = () => {
   doc.text('PROFESSIONAL SUMMARY', 20, 55);
   doc.setFontSize(10);
   doc.setTextColor(0, 0, 0);
-  const summary = 'Strong, skilled DevOps engineer with 4.9+ years of experience developing applications via automated pipelines in various environments. Deep expertise in Docker, Kubernetes, Azure, and AWS cloud platforms.';
+  const summary = 'Strong, skilled DevOps engineer with 4.8+ years of experience developing applications via automated pipelines in various environments. Deep expertise in Docker, Kubernetes, Azure, and AWS cloud platforms.';
   doc.text(summary, 20, 62, { maxWidth: 170 });
   
   // Experience
@@ -48,7 +48,7 @@ export const generateCV = () => {
   doc.setFontSize(10);
   doc.text('Tata Consultancy Services (TCS) | JAN 2021 - Present', 20, 93);
   doc.text('• Working with Docker and Kubernetes for containerization and orchestration', 20, 99);
-  doc.text('• Building end-to-end CI/CD pipelines using Jenkins, GitHub, Azure, and GitHub Actions', 20, 104);
+  doc.text('• Building end-to-end CI/CD pipelines using Jenkins, GitLab, Azure, and GitHub Actions', 20, 104);
   doc.text('• Managing technical debt projects with focus on containerization', 20, 109);
   
   // Job 2
@@ -58,7 +58,7 @@ export const generateCV = () => {
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(10);
   doc.text('Acchanz System Pvt. Ltd | FEB 2021 - NOV/DEC 2022', 20, 123);
-  doc.text('• Used DevOps tools like Jenkins, GitHub Actions, Azure, AWS, and GitHub', 20, 129);
+  doc.text('• Used DevOps tools like Jenkins, GitLab, Azure, AWS, and GitHub', 20, 129);
   doc.text('• Infrastructure automation using Terraform and Ansible', 20, 134);
   doc.text('• Application migration and containerization', 20, 139);
   
@@ -68,7 +68,7 @@ export const generateCV = () => {
   doc.text('TECHNICAL SKILLS', 20, 152);
   doc.setFontSize(10);
   doc.setTextColor(0, 0, 0);
-  doc.text('DevOps & CI/CD: Jenkins, Git/GitHub, Azure Release Pipeline, GitHub Actions', 20, 159);
+  doc.text('DevOps & CI/CD: Jenkins, Git/GitHub/GitLab, Azure Release Pipeline, GitHub Actions', 20, 159);
   doc.text('Containerization: Docker, Kubernetes, Container Registry, Helm', 20, 164);
   doc.text('Cloud Platforms: AWS, Azure, Linux', 20, 169);
   doc.text('Infrastructure as Code: Terraform, Ansible, CloudFormation', 20, 174);
@@ -81,9 +81,9 @@ export const generateCV = () => {
   doc.setFontSize(10);
   doc.setTextColor(0, 0, 0);
   doc.setFont('helvetica', 'bold');
-  doc.text('Bachelor of Technology', 20, 199);
+  doc.text('Bachelor of Technology in Mechanical Engineering', 20, 199);
   doc.setFont('helvetica', 'normal');
-  doc.text('VBU, Jharkhand', 20, 204);
+  doc.text('Thulaja Ram University, Jharkhand', 20, 204);
   
   // Certifications
   doc.setFontSize(14);
@@ -92,8 +92,8 @@ export const generateCV = () => {
   doc.setFontSize(10);
   doc.setTextColor(0, 0, 0);
   doc.text('• AWS Cloud Practitioner Certification Basic', 20, 224);
-  doc.text('• GitHub Foundation Certification', 20, 229);
-  doc.text('• GitHub Actions Certification', 20, 234);
+  doc.text('• GitLab Foundation Certification', 20, 229);
+  doc.text('• Kubernetes Certification', 20, 234);
   doc.text('• Basic Python Programming', 20, 239);
   
   // Languages
