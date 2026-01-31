@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Github, Linkedin, Mail, Download, Code } from 'lucide-react';
-import profileImage from 'figma:asset/c49d89cc3ba9dbd5284d66f0815ddfdd2cc8d3f6.png';
+import profileImage from 'figma:../../assets/c49d89cc3ba9dbd5284d66f0815ddfdd2cc8d3f6.png';
 import { generateCV } from '../utils/generateCV';
 
 export function Hero() {
